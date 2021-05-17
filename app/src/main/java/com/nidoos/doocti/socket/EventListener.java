@@ -41,7 +41,6 @@ import com.nidoos.doocti.utils.ApplicationInsight;
 import com.nidoos.doocti.utils.SharedPrefHelper;
 import com.nidoos.doocti.utils.SipManager;
 import com.nidoos.doocti.views.CallScreenActivity;
-import com.nidoos.doocti.views.DialerActivity;
 import com.nidoos.doocti.views.Fragments.ProfileFragment;
 
 import org.json.JSONArray;
@@ -543,7 +542,7 @@ public class EventListener extends Service {
                                     try {
                                         callInfo.setEvent(event);
                                         callInfo.setAgentChannel(agent_channel);
-                                        callInfo.setAgentChannel(caller_channel);
+                                        callInfo.setCallerChannel(caller_channel);
                                         callInfo.setAnswerTime(answer_time);
 
                                         if (!customerInfoApiCall && popup) {
