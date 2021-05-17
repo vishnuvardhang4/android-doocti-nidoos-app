@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_headers"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/call_transfer"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_other_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:weightSum="3">
+
+        <EditText
+            android:id="@+id/et_transfer_number"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="2"
+            android:background="@drawable/textview_background"
+            android:hint="@string/mobile_number"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/bt_transfer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:text="@string/transfer"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_did_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:weightSum="3">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/sp_did_number"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/bt_connect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:text="@string/did_transfer"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_agent_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:weightSum="3">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/sp_agents"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/bt_agent_connect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:text="@string/agent_transfer"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_queue_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:weightSum="3">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/sp_queues"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/bt_queue_connect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:text="@string/queue_transfer"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">Doocti</string>
+    <!--development/demo-->
+<!--        <string name="com_auth0_client_id">rECEedvEUWZJoEibYdpVE11ymLBGOkOj</string>-->
+<!--        <string name="com_auth0_domain">dev-doocti.au.auth0.com</string>-->
+<!--        <string name="com_auth0_audience">https://dev-api.doocti.com</string>-->
+
+    <!--test-->
+<!--        <string name="com_auth0_client_id">gWUuXg7TSOhvfLsZUl4t1XoI7fwvzFo4</string>-->
+<!--        <string name="com_auth0_domain">test-doocti.au.auth0.com</string>-->
+<!--        <string name="com_auth0_audience">https://testapi.doocti.com</string>-->
+
+    <!--production-->
+        <string name="com_auth0_client_id">PzUYPR883bF90k0FJjF1TWVJO5qsDas9</string>
+        <string name="com_auth0_domain">live-doocti.au.auth0.com</string>
+        <string name="com_auth0_audience">https://prod-api.doocti.com</string>
+
+    <string name="login">Login</string>
+    <string name="about">About</string>
+    <string name="environment">Select Environment</string>
+    <string name="todo">TODO</string>
+    <string name="fetch_leads">Fetch Leads</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="pause">Pause</string>
+    <string name="phone">Phone</string>
+    <string name="entry">Entry</string>
+    <string name="duration">Duration</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="call_info">Call Info</string>
+    <string name="call_description">Call Description</string>
+    <string name="hangup">Hangup</string>
+    <string name="logout">Logout</string>
+    <string name="no_data_found">NO DATA FOUND</string>
+    <string name="auto">AUTO</string>
+    <string name="ringing">RINGING</string>
+    <string name="call_waiting">Call Waiting</string>
+    <string name="moreInfo">more info</string>
+    <string name="transfer">Transfer</string>
+    <string name="did_transfer">DID Transfer</string>
+    <string name="queue_transfer">Queue Transfer</string>
+    <string name="agent_transfer">Agent Transfer</string>
+    <string name="connect">Connect</string>
+    <string name="view_plans_offers"><![CDATA[View Plans & Offers]]></string>
+    <string name="plans_offers"><![CDATA[Plans & Offers]]></string>
+    <string name="view">View</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="answered">Answered</string>
+    <string name="transferred">Transferred</string>
+    <string name="calls">Calls</string>
+    <string name="title_activity_dialer">DialerActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="call_logs">Call Logs</string>
+    <string name="auto_dial">Auto Dial</string>
+    <string name="profile">Profile</string>
+    <string name="queue">Queue</string>
+    <string name="save">Save</string>
+    <string name="select_queue">Select Queue</string>
+    <string name="resume">Resume</string>
+    <string name="queue_paused">Queue Paused</string>
+    <string name="call">Call</string>
+    <string name="filter">Filter</string>
+    <string name="call_start_date">Call Start Date</string>
+    <string name="call_start_time">Call Start Time</string>
+    <string name="seconds">Seconds</string>
+    <string name="minutes">Minutes</string>
+    <string name="timeline">Timeline</string>
+    <string name="create_meeting">Create Meeting</string>
+    <string name="meeting_title">Meeting Title</string>
+    <string name="meeting_date">Meeting Date</string>
+    <string name="meeting_time">Meeting Time</string>
+    <string name="call_transfer">Call Transfer</string>
+    <string name="conference">Agent Conference</string>
+    <string name="manage_conference">Manage Conference</string>
+    <string name="play_recording">Play Recording</string>
+    <string name="skip">Skip</string>
+    <string name="contacts">Contacts</string>
+    <string name="search_contacts">Search Contacts</string>
+    <string name="asterdialer">Asterdialer</string>
+    <string name="others">Others</string>
+    <string name="btcontinue">continue</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="info">Info Status</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="whatsapp">WhatsApp Message</string>
+    <string name="refreshMessage">Click to Sync</string>
+    <string name="answer">Answer</string>
+    <string name="audio_player">Audio player</string>
+    <string name="answered_calls">Answered Calls:</string>
+    <string name="unanswered_calls">Unanswered Calls:</string>
+    <string name="total_calls">Total Calls:</string>
+    <string name="_0">0</string>
+    <string name="performance">Performance</string>
+</resources>

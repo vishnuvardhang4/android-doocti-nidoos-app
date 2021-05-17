@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_call_log"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:background="@color/colorWhite"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rv_total_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rv_call_log"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/rl_recording"
+                android:layout_toLeftOf="@+id/rl_recording">
+
+                <RelativeLayout
+                    android:id="@+id/rl_image_view"
+                    android:layout_width="40dp"
+
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_inbound"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:contentDescription="@string/todo"
+                        app:srcCompat="@drawable/call_received" />
+
+                    <ImageView
+                        android:id="@+id/iv_outbound"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:contentDescription="@string/todo"
+                        app:srcCompat="@drawable/call_made" />
+
+                    <ImageView
+                        android:id="@+id/iv_missed"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:contentDescription="@string/todo"
+                        app:srcCompat="@drawable/call_missed" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_call_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_toEndOf="@+id/rl_image_view"
+                    android:layout_toRightOf="@+id/rl_image_view"
+                    android:gravity="center"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tv_phone_number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_call_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/ll_call_data"
+                    android:layout_toEndOf="@+id/rl_image_view"
+                    android:layout_toRightOf="@+id/rl_image_view"
+                    android:gravity="center"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tv_dispo_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_call_duration"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_recording"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/iv_play_recordings"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/microphone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nidoos.doocti">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" android:required="true" />
+    <uses-permission android:name="android.permission.CALL_PHONE" android:required="true" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.USE_SIP" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" android:required="true"  />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" android:required="true" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:required="true"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+
+    <uses-permission
+        android:name="android.permission.STORAGE"
+        android:required="true" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:required="true" />
+
+    <application
+        android:name=".socket.Doocti"
+        android:allowBackup="false"
+        android:largeHeap="true"
+        android:fullBackupOnly="false"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@drawable/tdlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tdlogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="m">
+        <activity android:name=".views.DomainSelectActivity" />
+        <activity android:name=".views.PhoneNumberSipActivity" />
+        <activity android:name=".views.CreateCallActivity" />
+        <activity
+            android:name=".views.DialerActivity"
+            android:label="@string/title_activity_dialer" >
+
+
+
+        </activity>
+        <activity
+            android:name=".views.CallScreenActivity"
+            android:windowSoftInputMode="adjustPan" >
+
+            
+
+        </activity>
+        <activity android:name=".views.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".socket.EventListener"
+            android:enabled="true"/>
+
+        <meta-data
+            android:name="com.microsoft.applicationinsights.instrumentationKey"
+            android:value="${AI_INSTRUMENTATION_KEY}" />
+    </application>
+
+</manifest>

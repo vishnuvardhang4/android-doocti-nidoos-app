@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.DomainSelectActivity">
+
+
+    <RadioGroup
+        android:id="@+id/rg_domainSelection"
+        android:layout_width="365dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_asterdialer"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="asradioButtonClicked"
+            android:paddingLeft="20dp"
+            android:paddingTop="0dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="0dp"
+            android:checked="true"
+            android:text="@string/asterdialer"
+            android:textColor="#2196F3"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rb_others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="0dp"
+            android:layout_weight="1"
+            android:onClick="asradioButtonClicked"
+            android:paddingLeft="20dp"
+            android:paddingTop="0dp"
+            android:paddingRight="10dp"
+            android:text="@string/others"
+            android:textColor="#2196F3"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/bt_continue"
+        android:layout_width="183dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginRight="114dp"
+        android:background="#03A9F4"
+        android:text="@string/btcontinue"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_asterdialer" />
+
+    <Spinner
+        android:id="@+id/sp_asterdialer"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="381dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="180dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/bt_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_domainSelection"
+        tools:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/pb_domainSelect"
+        android:layout_width="397dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="278dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_continue">
+
+        <ProgressBar
+            android:id="@+id/pb_domain"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

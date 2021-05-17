@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_dialer"
+        android:icon="@drawable/notebook_multiple"
+        android:title="@string/call_logs" />
+
+    <item
+        android:id="@+id/navigation_contacts"
+        android:icon="@drawable/contacts"
+        android:title="@string/contacts" />
+
+    <item
+        android:id="@+id/navigation_auto_dial"
+        android:icon="@drawable/timer"
+        android:title="@string/auto_dial" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/account_circle"
+        android:title="@string/profile" />
+
+</menu>

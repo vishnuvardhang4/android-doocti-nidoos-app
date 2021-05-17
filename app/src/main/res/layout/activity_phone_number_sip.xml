@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.PhoneNumberSipActivity">
+
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mobile_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:layout_margin="20dp"
+            android:checked="true"
+            android:onClick="radioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/sip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIP"
+            android:layout_margin="20dp"
+            android:onClick="radioButtonClicked"/>
+
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:id="@+id/ll_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_user_name_sip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_username_sip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:inputType="textAutoComplete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_password_sip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_password_sip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_domain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_domain_sip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Domain"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/et_domain_sip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:inputType="textAutoComplete" />
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/bt_register_details_sip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:background="@drawable/button_background"
+        android:text="register"
+        android:textColor="@color/colorWhite" />
+
+
+    <EditText
+        android:id="@+id/et_extension"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:imeOptions="actionDone"
+        android:hint="@string/mobile_number"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/bt_send_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:height="50dp"
+        android:background="@drawable/button_background"
+        android:text="Send OTP"
+        android:visibility="gone"
+        android:textColor="@color/colorWhite" />
+
+    <EditText
+        android:id="@+id/et_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:imeOptions="actionDone"
+        android:hint="OTP"
+        android:visibility="gone"
+        android:inputType="number" />
+
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:height="50dp"
+        android:background="@drawable/button_background"
+        android:text="@string/login"
+        android:textColor="@color/colorWhite" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ProgressBar
+        android:id="@+id/pb_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>
