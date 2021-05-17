@@ -395,6 +395,7 @@ public class EventListener extends Service {
                 for (Object arg : args) {
 
                     JSONObject data = (JSONObject) arg;
+//Log
                     Log.w("event Rx", "queue-login-response," + data.toString());
 
 
